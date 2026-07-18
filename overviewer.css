@@ -1,0 +1,371 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #000;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 160%;
+}
+
+#mcmap {
+    width: 100%;
+    height: 100%;
+}
+
+.infoWindow {
+    height: 100px;
+}
+
+.infoWindow>img {
+    width:80px;
+    float: left;
+    image-rendering: -moz-crisp-edges;
+}
+
+.infoWindow>p {
+    text-align: center;
+    font-family: monospace;
+}
+
+.customControl {
+    padding: 5px;
+    height: 15px;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.customControl > select {
+    font-size: 12px;
+    line-height: 160%;
+    text-align: center;
+
+    border: 1px solid #A9BBDF;
+    border-radius: 2px 2px;
+    box-shadow: rgba(0, 0, 0, 0.347656) 2px 2px 3px;
+
+}
+
+.customControl > div.top {
+    font-size: 12px;
+    line-height: 160%;
+    text-align: center;
+    padding: 0px 6px;
+
+    background-image: url('control-bg.png');
+    background-repeat: repeat-x;
+
+    border: 1px solid #A9BBDF;
+    border-radius: 2px 2px;
+    box-shadow: rgba(0, 0, 0, 0.347656) 2px 2px 3px;
+    cursor: pointer;
+}
+
+.customControl > div.top:hover {
+    border: 1px solid #678AC7;
+}
+
+.customControl > div.top-active {
+    color: white;
+    font-weight: bold;
+    padding: 0px 5px;
+    border: 1px solid #678AC7;
+    background-image: url('control-bg-active.png');
+}
+
+.customControl > div.dropDown {
+    font-size: 12px;
+    background-color: white;
+
+    border: 1px solid #A9BBDF;
+    border-radius: 2px 2px;
+    box-shadow: rgba(0, 0, 0, 0.347656) 2px 2px 3px;
+
+    display: none;
+}
+
+.customControl > div.button {
+    border: 1px solid #000;
+    font-size: 12px;
+    background-color: #fff;
+    display: none;
+}
+
+
+#link, #coordsDiv, #progressDiv {
+    background-color: #fff; /* fallback */
+    background-color: rgba(255,255,255,0.55);
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 9pt;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 1px;
+}
+
+#link:hover {
+    background-color: #fff; /* fallback */
+    background-color: rgba(255,255,255,0.8);
+}
+
+#searchControl {
+    padding: 5px;
+    height: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#searchControl > input {
+    border: 2px solid #000;
+    font-size: 12pt;
+    width: 20em;
+    background-color: #fff;
+}
+
+#searchControl>input.inactive {
+    color: #ccc;
+}
+
+#searchControl>input.active {
+    color: #000;
+}
+
+div#searchDropDown {
+    border: 1px solid #000;
+    width: 17em;
+    font-size: 14pt;
+    background-color: #fff;
+    display: none;
+}
+
+div.searchResultItem  {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div.searchResultItem img {
+    width: 24px;
+    height: 24px;
+}
+
+
+div.worldcontrol {
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background: #fff;
+    padding: 2px;
+}
+div.worldcontrol select {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.leaflet-container .coordbox, .leaflet-container .progress {
+    box-shadow: none;
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    padding: 0 5px;
+    color: #333;
+}
+
+.ov-marker {
+    position:relative;
+    margin-left:-50%;
+    margin-top:-50%;
+}
+
+
+div.ov-marker-legend {
+    display: inline-block;
+    float: right;
+    clear: right;
+    margin-left: 20px;
+    height: 1.5em;
+}
+
+div.ov-marker-legend img {
+    height: 1.5em;
+}
+
+.leaflet-div-icon {
+    background: 0;
+    border: 0;
+}
+
+
+/** GENERATED: DO NOT MODIFY DIRECTLY **/
+.mctext-obfuscated {
+  text-shadow: 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 6px black, 0 0 8px black, 0 0 8px black;
+  color: transparent;
+}
+
+.mctext-black {
+  color: #000000;
+}
+
+.mctext-black.mctext-obfuscated {
+  text-shadow: 0 0 6px #000000, 0 0 6px #000000, 0 0 6px #000000, 0 0 6px #000000, 0 0 8px #000000, 0 0 8px #000000;
+  color: transparent;
+}
+
+.mctext-dark_blue {
+  color: #0000AA;
+}
+
+.mctext-dark_blue.mctext-obfuscated {
+  text-shadow: 0 0 6px #0000AA, 0 0 6px #0000AA, 0 0 6px #0000AA, 0 0 6px #0000AA, 0 0 8px #0000AA, 0 0 8px #0000AA;
+  color: transparent;
+}
+
+.mctext-dark_green {
+  color: #00AA00;
+}
+
+.mctext-dark_green.mctext-obfuscated {
+  text-shadow: 0 0 6px #00AA00, 0 0 6px #00AA00, 0 0 6px #00AA00, 0 0 6px #00AA00, 0 0 8px #00AA00, 0 0 8px #00AA00;
+  color: transparent;
+}
+
+.mctext-dark_aqua {
+  color: #00AAAA;
+}
+
+.mctext-dark_aqua.mctext-obfuscated {
+  text-shadow: 0 0 6px #00AAAA, 0 0 6px #00AAAA, 0 0 6px #00AAAA, 0 0 6px #00AAAA, 0 0 8px #00AAAA, 0 0 8px #00AAAA;
+  color: transparent;
+}
+
+.mctext-dark_red {
+  color: #AA0000;
+}
+
+.mctext-dark_red.mctext-obfuscated {
+  text-shadow: 0 0 6px #AA0000, 0 0 6px #AA0000, 0 0 6px #AA0000, 0 0 6px #AA0000, 0 0 8px #AA0000, 0 0 8px #AA0000;
+  color: transparent;
+}
+
+.mctext-dark_purple {
+  color: #AA00AA;
+}
+
+.mctext-dark_purple.mctext-obfuscated {
+  text-shadow: 0 0 6px #AA00AA, 0 0 6px #AA00AA, 0 0 6px #AA00AA, 0 0 6px #AA00AA, 0 0 8px #AA00AA, 0 0 8px #AA00AA;
+  color: transparent;
+}
+
+.mctext-gold {
+  color: #FFAA00;
+}
+
+.mctext-gold.mctext-obfuscated {
+  text-shadow: 0 0 6px #FFAA00, 0 0 6px #FFAA00, 0 0 6px #FFAA00, 0 0 6px #FFAA00, 0 0 8px #FFAA00, 0 0 8px #FFAA00;
+  color: transparent;
+}
+
+.mctext-gray {
+  color: #AAAAAA;
+}
+
+.mctext-gray.mctext-obfuscated {
+  text-shadow: 0 0 6px #AAAAAA, 0 0 6px #AAAAAA, 0 0 6px #AAAAAA, 0 0 6px #AAAAAA, 0 0 8px #AAAAAA, 0 0 8px #AAAAAA;
+  color: transparent;
+}
+
+.mctext-dark_gray {
+  color: #555555;
+}
+
+.mctext-dark_gray.mctext-obfuscated {
+  text-shadow: 0 0 6px #555555, 0 0 6px #555555, 0 0 6px #555555, 0 0 6px #555555, 0 0 8px #555555, 0 0 8px #555555;
+  color: transparent;
+}
+
+.mctext-blue {
+  color: #5555FF;
+}
+
+.mctext-blue.mctext-obfuscated {
+  text-shadow: 0 0 6px #5555FF, 0 0 6px #5555FF, 0 0 6px #5555FF, 0 0 6px #5555FF, 0 0 8px #5555FF, 0 0 8px #5555FF;
+  color: transparent;
+}
+
+.mctext-green {
+  color: #55FF55;
+}
+
+.mctext-green.mctext-obfuscated {
+  text-shadow: 0 0 6px #55FF55, 0 0 6px #55FF55, 0 0 6px #55FF55, 0 0 6px #55FF55, 0 0 8px #55FF55, 0 0 8px #55FF55;
+  color: transparent;
+}
+
+.mctext-aqua {
+  color: #55FFFF;
+}
+
+.mctext-aqua.mctext-obfuscated {
+  text-shadow: 0 0 6px #55FFFF, 0 0 6px #55FFFF, 0 0 6px #55FFFF, 0 0 6px #55FFFF, 0 0 8px #55FFFF, 0 0 8px #55FFFF;
+  color: transparent;
+}
+
+.mctext-red {
+  color: #FF5555;
+}
+
+.mctext-red.mctext-obfuscated {
+  text-shadow: 0 0 6px #FF5555, 0 0 6px #FF5555, 0 0 6px #FF5555, 0 0 6px #FF5555, 0 0 8px #FF5555, 0 0 8px #FF5555;
+  color: transparent;
+}
+
+.mctext-light_purple {
+  color: #FF55FF;
+}
+
+.mctext-light_purple.mctext-obfuscated {
+  text-shadow: 0 0 6px #FF55FF, 0 0 6px #FF55FF, 0 0 6px #FF55FF, 0 0 6px #FF55FF, 0 0 8px #FF55FF, 0 0 8px #FF55FF;
+  color: transparent;
+}
+
+.mctext-yellow {
+  color: #FFFF55;
+}
+
+.mctext-yellow.mctext-obfuscated {
+  text-shadow: 0 0 6px #FFFF55, 0 0 6px #FFFF55, 0 0 6px #FFFF55, 0 0 6px #FFFF55, 0 0 8px #FFFF55, 0 0 8px #FFFF55;
+  color: transparent;
+}
+
+.mctext-white {
+  color: #FFFFFF;
+}
+
+.mctext-white.mctext-obfuscated {
+  text-shadow: 0 0 6px #FFFFFF, 0 0 6px #FFFFFF, 0 0 6px #FFFFFF, 0 0 6px #FFFFFF, 0 0 8px #FFFFFF, 0 0 8px #FFFFFF;
+  color: transparent;
+}
+
+.mctext-bold {
+  font-weight: bolder;
+}
+
+.mctext-italic {
+  font-style: italic;
+}
+
+.mctext-underlined {
+  text-decoration: underline;
+}
+
+.mctext-strikethrough {
+  text-decoration: line-through;
+}
+
+.mctext-strikethrough.mctext-underlined {
+  text-decoration: line-through underline;
+}
+/** END GENERATED SECTION **/

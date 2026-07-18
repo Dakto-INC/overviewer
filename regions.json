@@ -1,0 +1,60 @@
+[
+  {
+    "id": "WorldGuard POI",
+    "x": -773,
+    "y": 209,
+    "z": 373,
+    "name": "spawn",
+    "owners": [],
+    "members": [],
+    "flags": {
+      "use": "allow",
+      "invincible": "allow",
+      "interact": "allow"
+    }
+  },
+  {
+    "id": "WorldGuard POI",
+    "x": 988,
+    "y": 285,
+    "z": -17591,
+    "name": "dawater",
+    "owners": [],
+    "members": [],
+    "flags": {
+      "lightning": "deny",
+      "other-explosion": "deny",
+      "creeper-explosion": "deny",
+      "pvp": "deny",
+      "tnt": "deny",
+      "mob-spawning": "deny"
+    }
+  },
+  {
+    "id": "WorldGuard POI",
+    "x": 39941,
+    "y": 69,
+    "z": 39985,
+    "name": "aaronsland",
+    "owners": [],
+    "members": [],
+    "flags": {
+      "other-explosion": "deny",
+      "tnt": "deny"
+    }
+  },
+  {
+    "id": "WorldGuard POI",
+    "x": 16131,
+    "y": 231,
+    "z": 16349,
+    "name": "gateland",
+    "owners": [],
+    "members": [],
+    "flags": {
+      "use": "allow",
+      "greeting": "Welcome to Gateland. The server's first build created by Dakto_ and OnlyQwQ.",
+      "interact": "allow"
+    }
+  }
+]
